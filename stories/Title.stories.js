@@ -1,4 +1,4 @@
-import Title from '../src/components/Title.vue';
+import Title from './Title.vue';
 
 export default {
   title: 'Example/Title',  // Define where it appears in the Storybook sidebar
