@@ -22,7 +22,7 @@ export const Default = {
 export const Custom = {
   args: {
     text: 'Custom Title',
-    color: '[#95d600]',
+    color: 'purple-500',
     size: '4xl',
   },
 };
