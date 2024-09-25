@@ -7,6 +7,7 @@ module.exports = {
     './layouts/**/*.{vue,js}',
     './stories/**/*.{vue,js,mdx}',
     './.nuxt/**/*.{vue,js}',
+    './.storybook/*.{js,jsx,ts,tsx,vue}' // Ensure Storybook files are included
   ],
   safelist: [
     {
