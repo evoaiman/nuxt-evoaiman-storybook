@@ -1,5 +1,5 @@
 <template>
-  <h1 :style="{ color: color, fontSize: size + 'px' }">{{ text }}</h1>
+  <h1 :class="classes">{{ text }}</h1>
 </template>
 
 <script>
@@ -12,11 +12,16 @@ export default {
     },
     color: {
       type: String,
-      default: '#000',
+      default: 'black', // Expect Tailwind-compatible color names (e.g., 'black', 'blue-500')
     },
     size: {
-      type: Number,
-      default: 24,
+      type: String,
+      default: '2xl', // Expect valid Tailwind sizes ('sm', 'lg', '2xl', etc.)
+    },
+  },
+  computed: {
+    classes() {
+      return [`text-${this.color}`, `text-${this.size}`]; // Make sure this resolves to valid Tailwind classes
     },
   },
 };
@@ -25,6 +30,5 @@ export default {
 <style scoped>
 h1 {
   margin: 0;
-  font-family: Arial, sans-serif;
 }
 </style>

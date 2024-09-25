@@ -3,31 +3,26 @@ import Title from './Title.vue';
 export default {
   title: 'Example/Title',  // Define where it appears in the Storybook sidebar
   component: Title,
+  tags: ['autodocs'],
   argTypes: {
     text: { control: 'text' },
-    color: { control: 'color' },
-    size: { control: 'number' },
+    color: { control: 'text' },
+    size: { control: 'text' },
   },
 };
 
-const Template = (args) => ({
-  components: { Title },
-  setup() {
-    return { args };
+export const Default = {
+  args: {
+    text: 'Hello Storybook',
+    color: 'black',
+    size: '2xl',
   },
-  template: '<Title v-bind="args" />',
-});
-
-export const Default = Template.bind({});
-Default.args = {
-  text: 'Hello Storybook',
-  color: '#000',
-  size: 24,
 };
 
-export const Custom = Template.bind({});
-Custom.args = {
-  text: 'Custom Title',
-  color: '#FF0000',
-  size: 40,
+export const Custom = {
+  args: {
+    text: 'Custom Title',
+    color: '[#95d600]',
+    size: '4xl',
+  },
 };

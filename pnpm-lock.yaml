@@ -11,9 +11,6 @@ dependencies:
   nuxt:
     specifier: ^2.18.1
     version: 2.18.1(consola@3.2.3)(react-dom@18.3.1)(react@18.3.1)(typescript@4.2.4)(vue@3.5.8)
-  unfetch:
-    specifier: ^5.0.0
-    version: 5.0.0
   vue:
     specifier: ^3.5.8
     version: 3.5.8(typescript@4.2.4)
@@ -23,6 +20,9 @@ dependencies:
   vue-template-compiler:
     specifier: ^2.7.16
     version: 2.7.16
+  whatwg-fetch:
+    specifier: ^3.6.20
+    version: 3.6.20
 
 devDependencies:
   '@chromatic-com/storybook':
@@ -64,6 +64,9 @@ devDependencies:
   '@vitejs/plugin-vue':
     specifier: ^5.1.4
     version: 5.1.4(vite@5.4.7)(vue@3.5.8)
+  autoprefixer:
+    specifier: ^10.4.20
+    version: 10.4.20(postcss@8.4.47)
   chromatic:
     specifier: ^11.10.3
     version: 11.10.3
@@ -73,6 +76,9 @@ devDependencies:
   storybook:
     specifier: ^8.3.2
     version: 8.3.2
+  tailwindcss:
+    specifier: ^3.4.13
+    version: 3.4.13
 
 packages:
 
@@ -13311,6 +13317,10 @@ packages:
       std-env: 3.7.0
       webpack: 4.47.0
       wrap-ansi: 7.0.0
+    dev: false
+
+  /whatwg-fetch@3.6.20:
+    resolution: {integrity: sha512-EqhiFU6daOA8kpjOWTL0olhVOF3i7OrFzSYiGsEMB8GcXS+RrzauAERX65xMeNWVqxA6HXH2m69Z9LaKKdisfg==}
     dev: false
 
   /whatwg-url@5.0.0:
