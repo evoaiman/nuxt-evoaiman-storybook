@@ -1,4 +1,5 @@
 import { create } from '@storybook/theming/create';
+import brandImage from '../src/assets/logo-evoaiman.svg'; // adjust the path accordingly
 
 export default create({
   // base: 'light',
@@ -8,7 +9,7 @@ export default create({
 
   // brandTitle: 'My custom Storybook',
   // brandUrl: 'https://iamaiman.vercel.app/',
-  brandImage: './assets/logo-evoaiman.png',
+  brandImage: brandImage,
   // brandTarget: '_self',
 
   //
