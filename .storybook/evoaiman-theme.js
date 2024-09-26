@@ -8,7 +8,7 @@ export default create({
 
   // brandTitle: 'My custom Storybook',
   // brandUrl: 'https://iamaiman.vercel.app/',
-  brandImage: './assets/logo-evoaiman.svg',
+  brandImage: './assets/logo-evoaiman.png',
   // brandTarget: '_self',
 
   //
