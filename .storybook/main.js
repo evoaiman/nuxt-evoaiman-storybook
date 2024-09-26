@@ -5,8 +5,8 @@ const path = require('path'); // For resolving Tailwind paths
 
 const config = {
   stories: [
-    "../stories/**/*.mdx",
-    "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx|vue)",
+    "../src/stories/**/*.mdx",
+    "../src/stories/**/*.stories.@(js|jsx|mjs|ts|tsx|vue)",
   ],
   addons: [
     "@storybook/addon-onboarding",
@@ -23,6 +23,13 @@ const config = {
     // Add the vue plugin and ensure PostCSS is processing Tailwind
     return mergeConfig(config, {
       plugins: [vue()],
+      resolve: {
+        alias: {
+          '@components': path.resolve(__dirname, '../src/components'),
+          '@assets': path.resolve(__dirname, '../src/assets'),
+          // Add more aliases as needed
+        },
+      },
       css: {
         postcss: {
           plugins: [
